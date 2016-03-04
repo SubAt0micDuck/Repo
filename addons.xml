@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+<addon id="repository.SubAt0micDuck" name="SubAt0micDuck Repository" version="1.0" provider-name="SubAtomicDuck">
+	<extension point="xbmc.addon.repository" name="SubAt0micDuck Repository">
+		<info compressed="false">https://github.com/SubAt0micDuck/Repo/addons.xml</info>
+		<checksum>https://github.com/SubAt0micDuck/Repo/addons.xml.md5</checksum>
+		<datadir zip="true">https://github.com/SubAt0micDuck/Repo/addons.xml</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Home of Hybrid Dev Fork</summary>
+		<description>Visit www.noobsandnerds.com and become a part of our great family, you get to choose what The Community Portal holds!</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon
+  id="skin.hybrid.devfork"
+  version="1.0"
+  name="Hybrid Development Fork"
+  provider-name="Mudislander - Forked by SubAt0micDuck">
+  <requires>
+    <import addon="xbmc.gui" version="5.10.0"/>
+	<import addon="script.favourites" version="6.0.1"/>
+	<import addon="service.library.data.provider" version="0.0.4"/>
+	<import addon="script.extendedinfo" version="2.0.7"/>
+	<import addon="script.simpleplaylists" version="1.1.1"/>
+	<import addon="script.grab.fanart" version="0.13.2"/>
+  </requires>
+  <extension
+    point="xbmc.gui.skin"
+    defaultthemename="textures.xbt"
+    debugging="false"
+    effectslowdown="0.75">
+    <res width="1280" height="720" aspect="16:9" default="true" folder="720p" />
+  </extension>
+  <extension point="xbmc.addon.metadata">
+     <summary lang="en">Hybrid Skin - Development Version Forked for use in Kodi Jarvis</summary>
+    <description lang="en">Hybrid Development was the initial test release of new ideas and development for Hybrid. This version is is a straight fork of the original for use in Jarvis</description>
+     <disclaimer lang="en">All credit for this skin goes to Mudislander. I merely edited it for the latest Kodi</disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
+</addons>
