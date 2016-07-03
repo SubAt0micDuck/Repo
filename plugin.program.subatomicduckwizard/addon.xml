@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addons>
 <addon id="plugin.program.subatomicduckwizard" name="Subatomic Duck Wizard" version="1" provider-name="SubAt0micDuck and Aftermath">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -14,4 +13,3 @@
     <platform>all</platform>
   </extension>
 </addon>
-</addons>
