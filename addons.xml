@@ -1,14 +1,36 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="repository.SubAt0micDuck" name="SubAt0micDuck Repository" version="1.0" provider-name="SubAtomicDuck">
-	<extension point="xbmc.addon.repository" name="SubAt0micDuck Repository">
-		<info compressed="false">https://github.com/SubAt0micDuck/Repo/addons.xml</info>
-		<checksum>https://github.com/SubAt0micDuck/Repo/addons.xml.md5</checksum>
-		<datadir zip="true">https://github.com/SubAt0micDuck/Repo/</datadir>
+<addon id="plugin.program.subatomicduckwizard" name="Subatomic Duck Wizard" version="0.0.1" provider-name="SubAt0micDuck and Aftermath">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.service" library="startup.py" start="startup" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Subatomic Duck Wizard</summary>
+    <description lang="en">Subatomic Duck Wizard allows you to get access to the latest Subatomic Duck Custom Builds.</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="repository.subat0micduck"
+		name="SubAt0micDuck Repository"
+		version="1.0"
+		provider-name="SubAtomicDuck">
+	<extension point="xbmc.addon.repository"
+		name="SubAt0micDuck Repository">
+		<dir>
+			<info compressed="false">https://github.com/SubAt0micDuck/Repo/raw/master/addons.xml</info>
+			<checksum>https://github.com/SubAt0micDuck/Repo/raw/master/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.github.com/SubAt0micDuck/master/Repo/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>Home of Hybrid Dev Fork</summary>
 		<description>Visit www.noobsandnerds.com and become a part of our great family, you get to choose what The Community Portal holds!</description>
+		<disclaimer>Kodi did not make any of the addons in this repository, and are therefore not responsible for the content herein. Users agree that the installation of any addons is done so at their own risk</disclaimer>
 		<platform>all</platform>
 	</extension>
 </addon>
